@@ -1,290 +1,152 @@
 <!DOCTYPE html>
-
-<html>
-<head>
+<html lang="en">
 <title>Tozzy's Design</title>
-<meta charset="utf-8"/>
+<meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
-<link href="https://www.w3schools.com/lib/w3-theme-blue-grey.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link rel="icon" href="icon.JPG" type="image/jpg">
-<style>
-html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
-</style>
 </head>
-<body class="w3-theme-l5">
-<!-- Navbar -->
+<body>
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
-<div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-<a class="w3-bar-item w3-button w3-padding-large w3-theme-d4" href="#"><i class="fa fa-home w3-margin-right"></i>Tozzy</a>
-<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#" title="News"><i class="fa fa-globe"></i></a>
-<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#" title="Account Settings"><i class="fa fa-user"></i></a>
-<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#" title="Messages"><i class="fa fa-envelope"></i></a>
-<div class="w3-dropdown-hover w3-hide-small">
-<button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
-<div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-<a class="w3-bar-item w3-button" href="#">One new friend request</a>
-<a class="w3-bar-item w3-button" href="#">Joyce posted on your wall</a>
-<a class="w3-bar-item w3-button" href="#">Cecilia likes your post</a>
-<a class="w3-bar-item w3-button" href="#">Your sis left the family chat</a>
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+<a class="w3-bar-item w3-button" href="#home"><b>FR</b> Real Estate</a>
+<!-- Float links to the right. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a class="w3-bar-item w3-button" href="#projects">Projects</a>
+<a class="w3-bar-item w3-button" href="#about">About</a>
+<a class="w3-bar-item w3-button" href="#contact">Contact</a>
 </div>
 </div>
-<a class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" href="#" title="My Account">
-<img alt="Avatar" class="w3-circle" src="Capture.JPG" style="height:23px;width:23px"/>
-</a>
 </div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" id="home" style="max-width:1500px;">
+<img alt="Architecture" class="w3-image" height="800" src="pexels-nout-gons-80280-248159.jpg" width="1500"/>
+<div class="w3-display-middle w3-margin-top w3-center">
+<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>FR</b></span> <span class="w3-hide-small w3-text-light-grey">Real Estate</span></h1>
 </div>
-<!-- Navbar on small screens -->
-<div class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large" id="navDemo">
-<a class="w3-bar-item w3-button w3-padding-large" href="#">Link 1</a>
-<a class="w3-bar-item w3-button w3-padding-large" href="#">Link 2</a>
-<a class="w3-bar-item w3-button w3-padding-large" href="#">Link 3</a>
-<a class="w3-bar-item w3-button w3-padding-large" href="#">My Profile</a>
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+<!-- Project Section -->
+<div class="w3-container w3-padding-32" id="projects">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
 </div>
-<!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
-<!-- The Grid -->
-<div class="w3-row">
-<!-- Left Column -->
-<div class="w3-col m3">
-<!-- Profile -->
-<div class="w3-card w3-round w3-white">
-<div class="w3-container">
-<h4 class="w3-center">My Profile</h4>
-<p class="w3-center"><img alt="Avatar" class="w3-circle" src="Capture.JPG" style="height:106px;width:106px"/></p>
-<hr/>
-<p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Web Developer</p>
-<p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Lagos, Nigeria</p>
-<p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> March 18, 2005</p>
-</div>
-</div>
-<br/>
-<!-- Accordion -->
-<div class="w3-card w3-round">
-<div class="w3-white">
-<button class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="myFunction('Demo1')"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-<div class="w3-hide w3-container" id="Demo1">
-<p>The Boyz +20 Members</p>
-<p>The Family chat 2 Members</p>
-</div>
-<button class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="myFunction('Demo2')"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-<div class="w3-hide w3-container" id="Demo2">
-<p>Intership</p>
-</div>
-<button class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="myFunction('Demo3')"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-<div class="w3-hide w3-container" id="Demo3">
 <div class="w3-row-padding">
-<br/>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z1.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z2.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z3.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z4.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z5.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img class="w3-margin-bottom" src="z6.jpg" style="width:100%"/>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+<img alt="House" src="summer.jpg" style="width:100%"/>
 </div>
 </div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+<img alt="House" src="brick.jpg" style="width:100%"/>
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+<img alt="House" src="reno1.jpg" style="width:100%"/>
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+<img alt="House" src="barn1.jpg" style="width:100%"/>
 </div>
 </div>
 </div>
-<br/>
-<!-- Interests -->
-<div class="w3-card w3-round w3-white w3-hide-small">
-<div class="w3-container">
-<p>Interests</p>
-<p>
-<span class="w3-tag w3-small w3-theme-d5">News</span>
-<span class="w3-tag w3-small w3-theme-d4">Augustine University</span>
-<span class="w3-tag w3-small w3-theme-d3">Labels</span>
-<span class="w3-tag w3-small w3-theme-d2">Games</span>
-<span class="w3-tag w3-small w3-theme-d1">Friends</span>
-<span class="w3-tag w3-small w3-theme">Games</span>
-<span class="w3-tag w3-small w3-theme-l1">Friends</span>
-<span class="w3-tag w3-small w3-theme-l2">Food</span>
-<span class="w3-tag w3-small w3-theme-l3">Design</span>
-<span class="w3-tag w3-small w3-theme-l4">Art</span>
-<span class="w3-tag w3-small w3-theme-l5">Photos</span>
-</p>
-</div>
-</div>
-<br/>
-<!-- Alert Box -->
-<div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-<span class="w3-button w3-theme-l3 w3-display-topright" onclick="this.parentElement.style.display='none'">
-<i class="fa fa-remove"></i>
-</span>
-<p><strong>Hey!</strong></p>
-<p>People are looking at your profile. Find out who.</p>
-</div>
-<!-- End Left Column -->
-</div>
-<!-- Middle Column -->
-<div class="w3-col m7">
 <div class="w3-row-padding">
-<div class="w3-col m12">
-<div class="w3-card w3-round w3-white">
-<div class="w3-container w3-padding">
-<h6 class="w3-opacity">Social Media template made by Tozzy</h6>
-<p class="w3-border w3-padding" contenteditable="true">Status: All we can say is omo :(</p>
-<button class="w3-button w3-theme" type="button"><i class="fa fa-pencil"></i>  Post</button>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+<img alt="House" src="summer2.jpg" style="width:99%"/>
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+<img alt="House" src="brick2.jpg" style="width:99%"/>
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+<img alt="House" src="reno2.jpg" style="width:99%"/>
+</div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+<img alt="House" src="barn2.jpg" style="width:99%"/>
 </div>
 </div>
 </div>
+<!-- About Section -->
+<div class="w3-container w3-padding-32" id="about">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
 </div>
-<div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
-<img alt="Avatar" class="w3-left w3-circle w3-margin-right" src="Capture j.JPG" style="width:60px"/>
-<span class="w3-right w3-opacity">1 min</span>
-<h4>Joyce</h4><br/>
-<hr class="w3-clear"/>
-<p>Best party was lit #Studentweek.</p>
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-half">
-<img alt="Northern Lights" class="w3-margin-bottom" src="j2.jpg" style="width:100%"/>
+<div class="w3-row-padding w3-grayscale">
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img alt="Tozzy" src="tony.JPG" style="width:100%"/>
+<h3>Tozzy</h3>
+<p class="w3-opacity">CEO &amp; Founder</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
 </div>
-<div class="w3-half">
-<img alt="Nature" class="w3-margin-bottom" src="j3.jpg" style="width:100%"/>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img alt="linda" src="linda.JPG" style="width:100%"/>
+<h3>Linyyy</h3>
+<p class="w3-opacity">Agent</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
 </div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img alt="Decker" src="chloe.JPG" style="width:100%"/>
+<h3>Chlorrr</h3>
+<p class="w3-opacity">Agent</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
 </div>
-<button class="w3-button w3-theme-d1 w3-margin-bottom" type="button"><i class="fa fa-thumbs-up"></i>  Like</button>
-<button class="w3-button w3-theme-d2 w3-margin-bottom" type="button"><i class="fa fa-comment"></i>  Comment</button>
-</div>
-<div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
-<img alt="Avatar" class="w3-left w3-circle w3-margin-right" src="Capture e.JPG" style="width:60px"/>
-<span class="w3-right w3-opacity">21 min</span>
-<h4>Elaxy</h4><br/>
-<hr class="w3-clear"/>
-<p>So Many places to go this summer... I had a blast fr #outfitcheck.</p>
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-half">
-<img alt="Northern Lights" class="w3-margin-bottom" src="e1.jpg" style="width:100%"/>
-</div>
-<div class="w3-half">
-<img alt="Nature" class="w3-margin-bottom" src="e2.jpg" style="width:100%"/>
-</div>
-</div>
-<button class="w3-button w3-theme-d1 w3-margin-bottom" type="button"><i class="fa fa-thumbs-up"></i>  Like</button>
-<button class="w3-button w3-theme-d2 w3-margin-bottom" type="button"><i class="fa fa-comment"></i>  Comment</button>
-</div>
-<div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
-<img alt="Avatar" class="w3-left w3-circle w3-margin-right" src="Capture a.JPG" style="width:60px"/>
-<span class="w3-right w3-opacity">1 hr</span>
-<h4>Alvin</h4><br/>
-<hr class="w3-clear"/>
-<p>Beach day!!!</p>
-<img class="w3-margin-bottom" src="a1.jpg" style="width:100%"/>
-<p>Almost drowned today lol... Remain small #sunnyday #mother_nature_revenge.</p>
-<button class="w3-button w3-theme-d1 w3-margin-bottom" type="button"><i class="fa fa-thumbs-up"></i>  Like</button>
-<button class="w3-button w3-theme-d2 w3-margin-bottom" type="button"><i class="fa fa-comment"></i>  Comment</button>
-</div>
-<div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
-<img alt="Avatar" class="w3-left w3-circle w3-margin-right" src="Capture f.JPG" style="width:60px"/>
-<span class="w3-right w3-opacity"> 2 days</span>
-<h4>Avery</h4><br/>
-<hr class="w3-clear"/>
-<p>Have you seen this?</p>
-<img class="w3-margin-bottom" src="f1.jpg" style="width:100%"/>
-<p>Best Movie of the year.... My friends enjoyed they're time #Girl'sout </p>
-<button class="w3-button w3-theme-d1 w3-margin-bottom" type="button"><i class="fa fa-thumbs-up"></i>  Like</button>
-<button class="w3-button w3-theme-d2 w3-margin-bottom" type="button"><i class="fa fa-comment"></i>  Comment</button>
-</div>
-<div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
-<img alt="Avatar" class="w3-left w3-circle w3-margin-right" src="Capture c.JPG" style="width:60px"/>
-<span class="w3-right w3-opacity"> 6 days</span>
-<h4>Cecilia</h4><br/>
-<hr class="w3-clear"/>
-<p>HIRE!!</p>
-<img class="w3-margin-bottom" src="c1.jpg" style="width:100%"/>
-<p>Available for children's birthday...Don't worry they'll love me lol!</p>
-<button class="w3-button w3-theme-d1 w3-margin-bottom" type="button"><i class="fa fa-thumbs-up"></i>  Like</button>
-<button class="w3-button w3-theme-d2 w3-margin-bottom" type="button"><i class="fa fa-comment"></i>  Comment</button>
-</div>
-<!-- End Middle Column -->
-</div>
-<!-- Right Column -->
-<div class="w3-col m2">
-<div class="w3-card w3-round w3-white w3-center">
-<div class="w3-container">
-<p>Upcoming Events:</p>
-<img alt="books" src="books.jpeg" style="width:100%;"/>
-<p><strong>Learning</strong></p>
-<p>Monday 21st October, 2024</p>
-<p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<img alt="lucy" src="luc.JPG" style="width:100%"/>
+<h3>Morning Guy</h3>
+<p class="w3-opacity">Agent</p>
+<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
 </div>
 </div>
-<br/>
-<div class="w3-card w3-round w3-white w3-center">
-<div class="w3-container">
-<p>Friend Request</p>
-<img alt="Avatar" src="Capture c.JPG" style="width:50%"/><br/>
-<span>Cecilia</span>
-<div class="w3-row w3-opacity">
-<div class="w3-half">
-<button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+<!-- Contact Section -->
+<div class="w3-container w3-padding-32" id="contact">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+<p>Lets get in touch and talk about your next project.</p>
+<form action="https://formsubmit.co/anthonynwaofor@gmail.com" method="POST">
+<input class="w3-input w3-border" name="Name" placeholder="Name" required="" type="text"/>
+<input class="w3-input w3-section w3-border" name="Email" placeholder="Email" required="" type="text"/>
+<input class="w3-input w3-section w3-border" name="Subject" placeholder="Subject" required="" type="text"/>
+<input class="w3-input w3-section w3-border" name="Comment" placeholder="Comment" required="" type="text"/>
+<button class="w3-button w3-black w3-section" type="submit">
+<i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+</form>
 </div>
-<div class="w3-half">
-<button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-</div>
-</div>
-</div>
-</div>
-<br/>
-<div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-<p>Congrats, You just won the iphone 13 pro max</p>
-</div>
-<br/>
-<div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-<p><i class="fa fa-bug w3-xxlarge"></i></p>
-</div>
-<!-- End Right Column -->
-</div>
-<!-- End Grid -->
-</div>
-<!-- End Page Container -->
-</div>
-<br/>
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-<h5>Endo</h5>
-</footer>
-<footer class="w3-container w3-theme-d5">
-<p>Powered by <a href="https://portfolio-1z5v.vercel.app/">Tozzy</a></p>
-</footer>
-<script>
-// Accordion
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+
+<div class="w3-container">
+<img class="w3-image" src="very.jpg" style="width:100%"/>
+</div>
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+<p>Made by Nwaofor Anthony | All Rights Reserved 2024</p>
+</footer>
 </body>
 </html>
